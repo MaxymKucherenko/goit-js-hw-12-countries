@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  margin: auto;
+  text-align: center;
+}
+
+.li {
+  text-decoration: none;
+}
+
+img {
+  width: 200px;
+  height: 100px;
+  border: 2px solid #000000;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.list-group {
+  margin: 20px 0;
+  list-style-type: none;
+  border: 4px, black;
+  text-align: left;
+}
+.list-group .list-group-item {
+  cursor: pointer;
+  margin: 2px;
+}
+.list-group .list-group-item:hover, .list-group .list-group-item:focus {
+  background-color: rgba(2, 117, 216, 0.6);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card {
+  margin: 20px 0;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=/src.e31bb0bc.css.map */

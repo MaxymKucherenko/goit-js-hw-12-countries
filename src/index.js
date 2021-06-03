@@ -1,6 +1,4 @@
 import './sass/main.scss';
-/* import './js/renderCard.js'; */
-/* import './js/findCountry'; */
 import debounce from 'lodash/debounce';
 import { fetchCountries } from './js/fetchCountries';
 import { swalAlert } from './js/SawapAllerts';

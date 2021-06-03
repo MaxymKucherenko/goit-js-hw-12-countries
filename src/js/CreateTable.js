@@ -1,7 +1,7 @@
 import { card } from './Card';
 import { elementsList } from './ElementList';
-import { pagination } from './Pagination';
-import { clearPaginator } from './ClearPagination';
+import { swalAlert } from './SawapAllerts';
+
 
 export const createTable = elements => {
   const rootList = document.querySelector('#root1');
@@ -9,14 +9,13 @@ export const createTable = elements => {
   if (!Array.isArray(elements)) throw 'Something wrong';
 
   if (elements.length > 1 && elements.length < 10) {
-    clearPaginator();
     elementsList(elements, rootList);
   }
-  if (elements.length > 10) {
-    pagination(elements, rootList);
-  }
+    if (elements.length > 10) {
+        swalAlert('Too many matches found. Please enter a more specific query!');
+    };
+  
   if (elements.length === 1) {
-    clearPaginator();
     card(elements);
   }
 };

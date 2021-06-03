@@ -5,4 +5,4 @@ export const fetchCountries = async name => {
     throw new Error(data.message || 'Something wrong');
   }
   return data;
-};
+}; 

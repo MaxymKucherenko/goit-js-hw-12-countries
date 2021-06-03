@@ -1,8 +1,6 @@
 import { onCheckedCountry } from './onCheckedCountry';
 
 export const elementsList = (elements, rootList) => {
-
-
   const arrElemetns =  elements.map(element => {
     return `<li class="list-group-item">${element.name}</li>`
   }).join('')

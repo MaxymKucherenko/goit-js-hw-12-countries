@@ -23,7 +23,7 @@ export const card = element => {
                                 </div>
                             </div>
                                 <div class="col-md-4">
-                                    <img src=${flag} alt="flag"  width="100%">
+                                    <img src=${flag} alt="flag">
                                  </div>
                             </div>`;
 

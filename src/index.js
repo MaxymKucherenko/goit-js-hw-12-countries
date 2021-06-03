@@ -41,3 +41,4 @@ const onInput = e => {
 };
 
 inputRef.addEventListener('input', debounce(onInput, 500));
+console.log('well done')

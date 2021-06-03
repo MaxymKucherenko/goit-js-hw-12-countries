@@ -1,0 +1,20 @@
+@import "~bootstrap/scss/bootstrap";
+.list-group {
+  margin: 20px 0;
+
+  .list-group-item {
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(2, 117, 216, 0.6);
+      transition: all 0.250s cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+  }
+
+}
+
+.card {
+  margin: 20px 0;
+}
